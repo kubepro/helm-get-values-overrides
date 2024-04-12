@@ -1,0 +1,11 @@
+name: get-values-overrides
+usage: "lookup for values overrides by key words"
+description: "look up for values overrides by key words"
+command: "$HELM_PLUGIN_DIR/get-values-overrides"
+platformCommand:
+  - os: linux
+    arch: i386
+    command: "$HELM_PLUGIN_DIR/get-values-overrides"
+  - os: linux
+    arch: amd64
+    command: "$HELM_PLUGIN_DIR/get-values-overrides"
