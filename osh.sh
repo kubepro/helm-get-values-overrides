@@ -12,16 +12,14 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-echo $HELM_PLUGIN_DIR
-
 case $1 in
     get-values-overrides)
         shift
-        $HELM_PLUGIN_DIR/bin/get-values-overrides "$@"
+        $HELM_PLUGIN_DIR/get-values-overrides "$@"
         ;;
     wait-for-pods)
         shift
-        $HELM_PLUGIN_DIR/bin/wait-for-pods.sh "$@"
+        $HELM_PLUGIN_DIR/wait-for-pods.sh "$@"
         ;;
     *)
         echo "unknown command"
