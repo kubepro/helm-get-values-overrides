@@ -1,6 +1,6 @@
 build: get-values-overrides
 
-get-values-overrides: get-values-overrides.go
+get-values-overrides: main.go
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -ldflags '-w' -o get-values-overrides
 
 # linting

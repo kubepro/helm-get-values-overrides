@@ -13,6 +13,16 @@
 #    under the License.
 
 set -e
+
+function usage() {
+    echo "Usage: $0 <namespace> [timeout]"
+    exit 1
+}
+
+if [[ $# -lt 1 ]];then
+    usage
+fi
+
 if [[ "$2" -gt 0 ]];then
     seconds=$2
 else
